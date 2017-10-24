@@ -23,3 +23,7 @@
     height: 80px;
     font-size: 3em;
 }
+
+.toolbar {
+    background-color: lightblue;
+}
