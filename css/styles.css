@@ -22,7 +22,6 @@
 
 .col-md-3 {
     height: 80px;
-    font-size: 3em;
 }
 
 .toolbar {
@@ -31,5 +30,5 @@
 
 span {
     /*visibility: hidden;*/
-    font-size: 2em;
+    font-size: 5em;
 }
