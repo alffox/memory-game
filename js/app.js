@@ -1,22 +1,26 @@
-/*var mouseClick = 0;
+/*var mouseClicks = 0;
 
 $('.col-md-3').click(function() {
-    mouseClick += 1;
-    console.log("clicks count: "+ mouseClick);
-});*/
-
-/*$('.col-md-3').click(function(clickOne) {
+    mouseClicks += 1;
+    $(this).addClass('no-clicks');
     $(this).find('span').removeClass('face-down');
-    var cardOne = $(this).find('span').attr('class');
+    console.log("clicks count: "+ mouseClicks);
+
+        var cardOne = $(this).find('span').attr('class');
     console.log("card one value is "+ cardOne);
 
-    $('.col-md-3').click(function(clickTwo) {
-        $(this).find('span').removeClass('face-down');
-        var cardTwo = $(this).find('span').attr('class');
-        console.log("card two value is "+ cardTwo);
+    var cardTwo = $(this).find('span').attr('class');
+    console.log("card two value is "+ cardTwo);
 
-        if (cardOne === cardTwo) {
+    if (cardOne === cardTwo) {
             console.log("they match!");
         }
-    });
 });*/
+
+
+
+
+
+        /*if (cardOne === cardTwo) {
+            console.log("they match!");
+        }*/
