@@ -28,7 +28,10 @@
     background-color: lightblue;
 }
 
+.face-down {
+    visibility: hidden;
+}
+
 span {
-    /*visibility: hidden;*/
     font-size: 5em;
 }
