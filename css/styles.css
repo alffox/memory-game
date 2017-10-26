@@ -35,3 +35,7 @@
 span {
     font-size: 5em;
 }
+
+.no-clicks {
+  pointer-events: none;
+}

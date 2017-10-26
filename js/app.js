@@ -1,4 +1,11 @@
-$('.col-md-3').click(function(clickOne) {
+/*var mouseClick = 0;
+
+$('.col-md-3').click(function() {
+    mouseClick += 1;
+    console.log("clicks count: "+ mouseClick);
+});*/
+
+/*$('.col-md-3').click(function(clickOne) {
     $(this).find('span').removeClass('face-down');
     var cardOne = $(this).find('span').attr('class');
     console.log("card one value is "+ cardOne);
@@ -12,4 +19,4 @@ $('.col-md-3').click(function(clickOne) {
             console.log("they match!");
         }
     });
-});
+});*/
