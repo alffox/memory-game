@@ -29,7 +29,7 @@ $(cards).click(function() {
             for ( var i = 1; i < openCards.length; i++ ){
                 if(openCards[i-1] == openCards[i]) {
                     console.log("there is a match !");
-                    openCards.splice(openCards[i], 2);
+                    openCards.splice(openCards[i]);
                     console.log("new array is "+ openCards);
                 }
             }
