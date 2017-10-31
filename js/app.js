@@ -12,7 +12,7 @@ $(function () {
 $(cards).click(function() {
     var card = $(this);
     //mouseClicks += 1;
-
+    revealCard();
 
     //console.log("clicks count: "+ mouseClicks);
 
