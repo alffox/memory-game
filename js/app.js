@@ -24,14 +24,18 @@ $(cards).click(function() {
     function cardMatcher() {
         openCards.push(card.attr('class'));
         if (openCards.length > 1) {
+
             console.log("card array is: " + openCards);
             console.log("the list has more than 1 item");
             for ( var i = 1; i < openCards.length; i++ ){
                 if(openCards[i-1] == openCards[i]) {
                     console.log("there is a match !");
+                    $(openCards[i]).addClass('matched');
+
                     openCards.splice(openCards[i]);
                     console.log("new array is "+ openCards);
                 }
+
             }
         }
     }

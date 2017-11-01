@@ -57,3 +57,7 @@
 .no-click-area {
   pointer-events: none;
 }
+
+.matched {
+    border-color: green !important;
+}
