@@ -37,13 +37,14 @@ $(cards).click(function() {
 
             function flipOver() {
                 console.log("there is a match !");
-                $('#deck .no-click-area').addClass('matched');
+                $('#deck .no-click-area').addClass('matched').removeClass('no-click-area');
                 openCards.splice(openCards[i]);
                 console.log("new array is: " + openCards);
             }
 
             function flipBack () {
-
+                console.log("failed match !");
+                $('#deck .no-click-area').addClass('unmatched');
             }
         }
     }

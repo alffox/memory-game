@@ -61,3 +61,7 @@
 .matched {
     border-color: green !important;
 }
+
+.unmatched {
+    border-color: red !important;
+}
