@@ -39,6 +39,9 @@ $(cards).click(function() {
                 $('#deck .no-click-area').addClass('matched').removeClass('no-click-area');
                 openCards.splice(openCards[i]);
                 console.log("new array is: " + openCards);
+                if ($('#deck .matched').length === 16) {
+                    alert("yeeeeeeeeeeeea ! You won, old chap !")
+                }
             }
 
             function flipBack() {
