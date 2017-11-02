@@ -14,6 +14,7 @@ $(cards).click(function() {
     //mouseClicks += 1;
     revealCard();
     cardMatcher();
+
     //console.log("clicks count: "+ mouseClicks);
 
     function revealCard() {
@@ -23,8 +24,8 @@ $(cards).click(function() {
     function cardMatcher() {
         openCards.push(card.attr('class'));
         if (openCards.length > 1) {
-            //console.log("card array is: " + openCards);
-            //console.log("the list has more than 1 item");
+            console.log("card array is: " + openCards);
+            console.log("the list has more than 1 item");
             for (var i = 1; i < openCards.length; i++) {
                 if (openCards[i - 1] == openCards[i]) {
                     flipOver();
@@ -42,10 +43,13 @@ $(cards).click(function() {
 
             function flipBack() {
                 console.log("failed match !");
+                openCards.splice(openCards[i]);
+                console.log("new array is: " + openCards);
                 $('#deck .no-click-area').addClass('unmatched');
                 setTimeout(function() {
                     $('#deck .unmatched').removeClass('unmatched no-click-area').addClass('covered');
-                }, 3000);
+                }, 1000);
+                return;
             }
         }
     }
