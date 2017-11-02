@@ -3,6 +3,9 @@ var cardsContainer = $("#deck");
 var cards = cardsContainer.children();
 var openCards = [];
 
+var counter = 0;
+
+// shuffle function readapted from http://jsfiddle.net/C6LPY/2/
 $(function() {
     while (cards.length) {
         cardsContainer.append(cards.splice(Math.floor(Math.random() * cards.length), 1)[0]);
@@ -12,10 +15,26 @@ $(function() {
 $(cards).click(function() {
     var card = $(this);
     //mouseClicks += 1;
+    timer();
     revealCard();
     cardMatcher();
 
     //console.log("clicks count: "+ mouseClicks);
+
+// timer function re-adapted from https://stackoverflow.com/questions/21670438/make-countdown-start-after-button-is-clicked
+function timer() {
+   setInterval(function() {
+     counter++;
+      if (counter >= 0) {
+        clock = $('#toolbar span');
+        clock.text(counter);
+         //span = document.getElementById("count");
+         //console.log("span is: "+ span);
+         //span.innerHTML = counter;
+      }
+     }, 1000);
+}
+
 
     function revealCard() {
         $(card).removeClass('covered').addClass('no-click-area');
