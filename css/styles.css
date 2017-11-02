@@ -25,23 +25,33 @@
     flex-direction: column;
 }
 
+#toolbar {
+    width: 60%;
+    border-style: solid;
+    border-color: black;
+}
+
+#toolbar > * {
+    width: 25%;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    padding: 3%;
+}
+
 #deck {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: row;
     color: black;
     border-style: solid;
-    width: 80%;
+    width: 25%;
+    margin-top: 80px;
 }
 
 #deck > * {
-    width: 106px;
-    height: 106px;
+    width: 25%;
     text-align: center;
     font-size: 500%;
     border-style: solid;
     border-color: black;
-
 }
 
 .covered {
@@ -50,8 +60,7 @@
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 .no-click-area {
@@ -60,7 +69,7 @@
 
 .matched {
     border-color: green !important;
-    pointer-events: none;
+
 }
 
 .unmatched {
