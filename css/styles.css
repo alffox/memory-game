@@ -17,38 +17,25 @@
 }*/
 
 .container {
-    display: flex;
-    float: none;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    flex-direction: column;
 }
 
 #toolbar {
-    width: 60%;
     border-style: solid;
     border-color: black;
 }
 
 #toolbar > * {
-    width: 25%;
-    text-align: center;
     border-style: solid;
     border-color: black;
-    padding: 3%;
 }
 
 #deck {
     color: black;
     border-style: solid;
-    width: 25%;
     margin-top: 80px;
 }
 
 #deck > * {
-    width: 25%;
-    text-align: center;
     font-size: 500%;
     border-style: solid;
     border-color: black;
