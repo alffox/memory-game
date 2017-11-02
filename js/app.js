@@ -48,10 +48,13 @@ $(cards).click(function() {
                 console.log("failed match !");
                 openCards.splice(openCards[i]);
                 console.log("new array is: " + openCards);
-                $('#deck .no-click-area').addClass('unmatched');
+                $('#deck .no-click-area').toggleClass('unmatched');
+                $(cardsContainer).addClass('no-click-area'); //while animation is playing, click on other cards should not be possible
                 setTimeout(function() {
                     $('#deck .unmatched').removeClass('unmatched no-click-area').addClass('covered');
+                    $(cardsContainer).toggleClass('no-click-area'); //after animation is finished, cards become clickable again
                 }, 1000);
+
                 return;
             }
         }
