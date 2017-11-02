@@ -28,8 +28,7 @@ $(cards).click(function() {
             for (var i = 1; i < openCards.length; i++) {
                 if (openCards[i - 1] == openCards[i]) {
                     flipOver();
-                }
-                else {
+                } else {
                     flipBack();
                 }
             }
@@ -41,9 +40,12 @@ $(cards).click(function() {
                 console.log("new array is: " + openCards);
             }
 
-            function flipBack () {
+            function flipBack() {
                 console.log("failed match !");
                 $('#deck .no-click-area').addClass('unmatched');
+                setTimeout(function() {
+                    $('#deck .unmatched').removeClass('unmatched no-click-area').addClass('covered');
+                }, 3000);
             }
         }
     }
