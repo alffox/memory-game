@@ -17,8 +17,7 @@ $(cards).click(function() {
     //console.log("clicks count: "+ mouseClicks);
 
     function revealCard() {
-        $(card).addClass('no-click-area');
-        $(card).removeClass('covered');
+        $(card).removeClass('covered').addClass('no-click-area');
     }
 
     function cardMatcher() {
