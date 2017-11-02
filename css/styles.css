@@ -60,6 +60,7 @@
 
 .matched {
     border-color: green !important;
+    pointer-events: none;
 }
 
 .unmatched {
