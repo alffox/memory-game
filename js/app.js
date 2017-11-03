@@ -26,7 +26,7 @@ $(cards).click(function() {
     cardMatcher();
 
     function clicksCounter() {
-        mouseClicks ++;
+        mouseClicks++;
         movesCounter.text(mouseClicks);
         starRatingCounter();
     }
@@ -34,11 +34,9 @@ $(cards).click(function() {
     function starRatingCounter() {
         if (mouseClicks === 1) {
             starCounter.text('★ ★ ★')
-        }
-        else if (mouseClicks === 2) {
+        } else if (mouseClicks === 2) {
             starCounter.text('★ ★')
-        }
-        else if (mouseClicks === 3) {
+        } else if (mouseClicks === 3) {
             starCounter.text('★')
         }
     }
@@ -91,6 +89,11 @@ $(cards).click(function() {
         }
     }
 
+    $("#button").off().click(function() {
+                if (confirm('You will lose your current progress, are you sure you want to proceed ?')) {
+                    location.reload();
+                } else {}
+    });
 
 });
 
