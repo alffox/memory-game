@@ -5,6 +5,7 @@ var openCards = [];
 
 clock = $('#time_counter');
 var elapsedSeconds = 0;
+var isTimeRunning = false;
 
 // shuffle function readapted from http://jsfiddle.net/C6LPY/2/
 $(function() {
@@ -20,16 +21,19 @@ $(cards).click(function() {
     revealCard();
     cardMatcher();
 
-    //console.log("clicks count: "+ mouseClicks);
-
     // timer function re-adapted from https://stackoverflow.com/questions/21670438/make-countdown-start-after-button-is-clicked
+
     function timer() {
+        if (!isTimeRunning) {
+            isTimeRunning = true;
             setInterval(function() {
                 elapsedSeconds++;
                 var elapsedTime = parseInt(elapsedSeconds / 60) + ':' + (elapsedSeconds % 60);
                 clock.text(elapsedTime);
             }, 1000);
+        }
     }
+
 
     function revealCard() {
         $(card).removeClass('covered').addClass('no-click-area');
