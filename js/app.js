@@ -3,7 +3,7 @@ var cardsContainer = $("#deck");
 var cards = cardsContainer.children();
 var openCards = [];
 
-timeCounter = $('#time_counter');
+var timeCounter = $('#time_counter');
 var elapsedSeconds = 0;
 var isTimeRunning = false;
 
