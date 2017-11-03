@@ -3,7 +3,7 @@ var cardsContainer = $("#deck");
 var cards = cardsContainer.children();
 var openCards = [];
 
-clock = $('#time_counter');
+timeCounter = $('#time_counter');
 var elapsedSeconds = 0;
 var isTimeRunning = false;
 
@@ -22,18 +22,16 @@ $(cards).click(function() {
     cardMatcher();
 
     // timer function re-adapted from https://stackoverflow.com/questions/21670438/make-countdown-start-after-button-is-clicked
-
     function timer() {
         if (!isTimeRunning) {
             isTimeRunning = true;
             setInterval(function() {
                 elapsedSeconds++;
                 var elapsedTime = parseInt(elapsedSeconds / 60) + ':' + (elapsedSeconds % 60);
-                clock.text(elapsedTime);
+                timeCounter.text(elapsedTime);
             }, 1000);
         }
     }
-
 
     function revealCard() {
         $(card).removeClass('covered').addClass('no-click-area');
@@ -42,8 +40,6 @@ $(cards).click(function() {
     function cardMatcher() {
         openCards.push(card.attr('class'));
         if (openCards.length > 1) {
-            console.log("card array is: " + openCards);
-            console.log("the list has more than 1 item");
             for (var i = 1; i < openCards.length; i++) {
                 if (openCards[i - 1] == openCards[i]) {
                     flipOver();
@@ -53,26 +49,21 @@ $(cards).click(function() {
             }
 
             function flipOver() {
-                console.log("there is a match !");
                 $('#deck .no-click-area').addClass('matched').removeClass('no-click-area');
                 openCards.splice(openCards[i]);
-                console.log("new array is: " + openCards);
                 if ($('#deck .matched').length === 16) {
                     alert("yeeeeeeeeeeeea ! You won, old chap !")
                 }
             }
 
             function flipBack() {
-                console.log("failed match !");
                 openCards.splice(openCards[i]);
-                console.log("new array is: " + openCards);
                 $('#deck .no-click-area').toggleClass('unmatched');
                 $(cardsContainer).addClass('no-click-area'); //while animation is playing, click on other cards should not be possible
                 setTimeout(function() {
                     $('#deck .unmatched').removeClass('unmatched no-click-area').addClass('covered');
                     $(cardsContainer).toggleClass('no-click-area'); //after animation is finished, cards become clickable again
                 }, 1000);
-
                 return;
             }
         }
