@@ -3,7 +3,7 @@ var cardsContainer = $("#deck");
 var cards = cardsContainer.children();
 var openCards = [];
 
-clock = $('#toolbar span');
+clock = $('#toolbar #count');
 var elapsedSeconds = 0;
 
 // shuffle function readapted from http://jsfiddle.net/C6LPY/2/
