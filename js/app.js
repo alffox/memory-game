@@ -1,4 +1,4 @@
-//var mouseClicks = 0;
+var mouseClicks = 0;
 var cardsContainer = $("#deck");
 var cards = cardsContainer.children();
 var openCards = [];
@@ -6,6 +6,8 @@ var openCards = [];
 timeCounter = $('#time_counter');
 var elapsedSeconds = 0;
 var isTimeRunning = false;
+
+var movesCounter = $('#moves_counter');
 
 // shuffle function readapted from http://jsfiddle.net/C6LPY/2/
 $(function() {
@@ -16,10 +18,15 @@ $(function() {
 
 $(cards).click(function() {
     var card = $(this);
-    //mouseClicks += 1;
+    clicksCounter();
     timer();
     revealCard();
     cardMatcher();
+
+    function clicksCounter() {
+        mouseClicks ++;
+        movesCounter.text(mouseClicks);
+    }
 
     // timer function re-adapted from https://stackoverflow.com/questions/21670438/make-countdown-start-after-button-is-clicked
     function timer() {
