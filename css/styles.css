@@ -1,6 +1,11 @@
 .container {
 }
 
+span {
+    display: inline-block;
+    padding: 20px;
+}
+
 #toolbar {
     border-style: solid;
     border-color: black;
