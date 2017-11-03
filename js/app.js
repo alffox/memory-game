@@ -9,6 +9,8 @@ var isTimeRunning = false;
 
 var movesCounter = $('#moves_counter');
 
+var starCounter = $('#rating_counter');
+
 // shuffle function readapted from http://jsfiddle.net/C6LPY/2/
 $(function() {
     while (cards.length) {
@@ -26,6 +28,19 @@ $(cards).click(function() {
     function clicksCounter() {
         mouseClicks ++;
         movesCounter.text(mouseClicks);
+        starRatingCounter();
+    }
+
+    function starRatingCounter() {
+        if (mouseClicks === 1) {
+            starCounter.text('★ ★ ★')
+        }
+        else if (mouseClicks === 2) {
+            starCounter.text('★ ★')
+        }
+        else if (mouseClicks === 3) {
+            starCounter.text('★')
+        }
     }
 
     // timer function re-adapted from https://stackoverflow.com/questions/21670438/make-countdown-start-after-button-is-clicked
