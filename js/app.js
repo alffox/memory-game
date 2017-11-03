@@ -3,6 +3,7 @@ var cardsContainer = $("#deck");
 var cards = cardsContainer.children();
 var openCards = [];
 
+clock = $('#toolbar span');
 var elapsedSeconds = 0;
 
 // shuffle function readapted from http://jsfiddle.net/C6LPY/2/
@@ -29,7 +30,6 @@ $(cards).click(function() {
             setInterval(function() {
                 elapsedSeconds++;
                 var elapsedTime = parseInt(elapsedSeconds / 60) + ':' + (elapsedSeconds % 60);
-                clock = $('#toolbar span');
                 clock.text(elapsedTime);
             }, 1000);
         }
