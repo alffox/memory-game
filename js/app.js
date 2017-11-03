@@ -3,7 +3,7 @@ var cardsContainer = $("#deck");
 var cards = cardsContainer.children();
 var openCards = [];
 
-clock = $('#toolbar #count');
+clock = $('#time_counter');
 var elapsedSeconds = 0;
 
 // shuffle function readapted from http://jsfiddle.net/C6LPY/2/
@@ -24,15 +24,11 @@ $(cards).click(function() {
 
     // timer function re-adapted from https://stackoverflow.com/questions/21670438/make-countdown-start-after-button-is-clicked
     function timer() {
-        if (elapsedSeconds > 0) {
-            return;
-        } else {
             setInterval(function() {
                 elapsedSeconds++;
                 var elapsedTime = parseInt(elapsedSeconds / 60) + ':' + (elapsedSeconds % 60);
                 clock.text(elapsedTime);
             }, 1000);
-        }
     }
 
     function revealCard() {
