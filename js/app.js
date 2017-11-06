@@ -45,7 +45,7 @@ $(cards).click(function() {
     function timer() {
         if (!isTimeRunning) {
             isTimeRunning = true;
-            setInterval(function() {
+            interval = setInterval(function() {
                 elapsedSeconds++;
                 var elapsedTime = parseInt(elapsedSeconds / 60) + ':' + (elapsedSeconds % 60);
                 timeCounter.text(elapsedTime);
@@ -72,6 +72,7 @@ $(cards).click(function() {
                 $('#deck .no-click-area').addClass('matched').removeClass('no-click-area');
                 openCards.splice(openCards[i]);
                 if ($('#deck .matched').length === 16) {
+                    clearInterval(interval);
                     alert("yeeeeeeeeeeeea ! You won, old chap !")
                 }
             }
