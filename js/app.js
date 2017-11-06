@@ -105,20 +105,12 @@ $(cards).click(function() {
 /* ========= Modal ========= */
 
 var modal = $('#myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
 var closeModal = $('.close');
 
-// When the user clicks on the button, open the modal
-//btn.onclick =
 function triggerModal() {
     modal.show();
 }
 
-// When the user clicks on <span> (x), close the modal
 closeModal.click(function() {
     modal.hide();
 });
