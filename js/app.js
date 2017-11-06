@@ -100,29 +100,21 @@ $(cards).click(function() {
 
 });
 
-/*Modal inspired by https://www.w3schools.com/howto/howto_css_modals.asp*/
-
-/* ========= Modal ========= */
-
-var modal = $('#myModal');
-var closeModal = $('.close');
+/* ====== Modal inspired by https://www.w3schools.com/howto/howto_css_modals.asp ====== */
+//TODO: the part below will need to be refactored to jQuery for consistency
+var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("close")[0];
 
 function triggerModal() {
-    modal.show();
+modal.style.display = "block";
 }
 
-closeModal.click(function() {
-    modal.hide();
-});
+span.onclick = function() {
+    modal.style.display = "none";
+}
 
-// When the user clicks on modal, close it
-modal.click(function( event ) {
-        console.log("last function called");
-        modal.hide();
-    });
-
-/*window.onclick = function(event) {
+window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}*/
+}
