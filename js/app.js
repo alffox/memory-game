@@ -3,13 +3,13 @@ var cardsContainer = $("#deck");
 var cards = cardsContainer.children();
 var openCards = [];
 
-var timeCounter = $('#time_counter');
+var timeCounter = $('.time-counter');
 var elapsedSeconds = 0;
 var isTimeRunning = false;
 
-var movesCounter = $('#moves_counter');
+var movesCounter = $('.moves-counter');
 
-var starCounter = $('#rating_counter');
+var starCounter = $('.rating-counter');
 
 // shuffle function readapted from http://jsfiddle.net/C6LPY/2/
 $(function() {
