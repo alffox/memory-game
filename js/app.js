@@ -104,28 +104,33 @@ $(cards).click(function() {
 
 /* ========= Modal ========= */
 
-var modal = document.getElementById('myModal');
+var modal = $('#myModal');
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var closeModal = $('.close');
 
 // When the user clicks on the button, open the modal
 //btn.onclick =
 function triggerModal() {
-    modal.style.display = "block";
+    modal.show();
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+closeModal.click(function() {
+    modal.hide();
+});
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+// When the user clicks on modal, close it
+modal.click(function( event ) {
+        console.log("last function called");
+        modal.hide();
+    });
+
+/*window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+}*/
