@@ -8,10 +8,21 @@ html {
     background: linear-gradient(to right, #ffa500 , #ffff00,    #008000,    #00ffff,    #0000ff, #ee82ee); /* Standard syntax (must be last) */
 }
 
-h1 {
-    background-color: #2ecc71;
-    color: yellow;
-    font-weight: bolder;
+header {
+    width: 25%;
+    display: flex;
+}
+
+h1,
+#toolbar > *,
+#deck,
+#deck > * {
+    background-color: #008000;
+    color: white;
+    padding: 20px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: yellow;
 }
 
 .container {
@@ -33,29 +44,22 @@ span {
 #toolbar {
     display: flex;
     width: 80%;
-    border-style: solid;
-    border-color: black;
+
 }
 
 #toolbar > * {
     width: 25%;
-    border-style: solid;
-    border-color: black;
 }
 
 #deck {
-    color: black;
-    border-style: solid;
     display: flex;
     flex-wrap: wrap;
     margin: 80px 0px 50px;
-    width: 344px;
-    height: 344px;
+    width: 601px;
+    height: 601px;
 }
 
 #deck > * {
-    border-style: solid;
-    border-color: black;
     font-size: 380%;
     width: 80px;
     height: 80px;
