@@ -98,3 +98,12 @@ span {
     text-decoration: none;
     cursor: pointer;
 }
+
+/*Inline stlying in iframe element in HHTML has been moved here below:*/
+iframe {
+    width: 100px;
+    height: 28px;
+    border: none;
+    margin-left: 50%;
+    overflow: hidden;
+}

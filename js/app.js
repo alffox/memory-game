@@ -102,6 +102,7 @@ $(cards).click(function() {
 
 /* ====== Modal inspired by https://www.w3schools.com/howto/howto_css_modals.asp ====== */
 //TODO: the part below will need to be refactored to jQuery for consistency
+
 var modal = document.getElementById('myModal');
 var span = document.getElementsByClassName("close")[0];
 
