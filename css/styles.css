@@ -112,6 +112,12 @@ span {
     cursor: pointer;
 }
 
+#play_again {
+        width: 94px;
+        height: 40px;
+        padding-top: 25px;
+    }
+
 /*Inline stlying in iframe element in HTML has been moved here below:*/
 iframe {
     width: 100px;
@@ -119,9 +125,3 @@ iframe {
     border: none;
     overflow: hidden;
 }
-
-#play_again {
-        width: 94px;
-        height: 40px;
-        padding-top: 25px;
-    }
