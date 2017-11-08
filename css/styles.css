@@ -115,7 +115,6 @@ span {
 #play_again {
         width: 94px;
         height: 40px;
-        padding-top: 25px;
     }
 
 /*Inline stlying in iframe element in HTML has been moved here below:*/
@@ -124,4 +123,5 @@ iframe {
     height: 28px;
     border: none;
     overflow: hidden;
+    padding-top: 25px;
 }
