@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="shortcut icon" href="favicon.ico"/> -->
     <title>Memory Game</title>
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-    <div class="container flex flex-column items-center tc">
+    <div class="container">
 
         <div class="no-click-area">
 
@@ -23,39 +22,39 @@
 
         </div>
 
-            <div id="toolbar" class="flex w-80">
+            <div id="toolbar">
 
-                <div id="timer" class="w-25 no-click-area">Timer<span class="time-counter">0:0</span></div>
+                <div id="timer" class="no-click-area">Timer<span class="time-counter">0:0</span></div>
 
-                <div id="clicks" class="w-25 no-click-area">Clicks<span class="moves-counter">0</span></div>
+                <div id="clicks" class="no-click-area">Clicks<span class="moves-counter">0</span></div>
 
-                <div id="rating" class="w-25 no-click-area">Rating<span class="rating-counter">★ ★ ★</span></div>
+                <div id="rating" class="no-click-area">Rating<span class="rating-counter">★ ★ ★</span></div>
 
-                <div id="restart" class="w-25"><button type="button" id="button">Restart Game</button></div>
+                <div id="restart"><button type="button" id="button">Restart Game</button></div>
 
         </div>
 
-        <div id="deck" class="flex flex-wrap w-25">
+        <div id="deck" class="">
 
-                <div class="card-heart covered w-25">❤</div>
-                <div class="card-heart covered w-25">❤</div>
-                <div class="card-umbrella covered w-25">☂</div>
-                <div class="card-umbrella covered w-25">☂</div>
+                <div class="card-heart covered">❤</div>
+                <div class="card-heart covered">❤</div>
+                <div class="card-umbrella covered">☂</div>
+                <div class="card-umbrella covered">☂</div>
 
-                <div class="card-horse covered w-25">♞</div>
-                <div class="card-horse covered w-25">♞</div>
-                <div class="card-phone covered w-25">☎</div>
-                <div class="card-phone covered w-25">☎</div>
+                <div class="card-horse covered">♞</div>
+                <div class="card-horse covered">♞</div>
+                <div class="card-phone covered">☎</div>
+                <div class="card-phone covered">☎</div>
 
-                <div class="card-note covered w-25">♫</div>
-                <div class="card-note covered w-25">♫</div>
-                <div class="card-sun covered w-25">☀</div>
-                <div class="card-sun covered w-25">☀</div>
+                <div class="card-note covered">♫</div>
+                <div class="card-note covered">♫</div>
+                <div class="card-sun covered">☀</div>
+                <div class="card-sun covered">☀</div>
 
-                <div class="card-coffee covered w-25">☕</div>
-                <div class="card-coffee covered w-25">☕</div>
-                <div class="card-smiley covered w-25">☺</div>
-                <div class="card-smiley covered w-25">☺</div>
+                <div class="card-coffee covered">☕</div>
+                <div class="card-coffee covered">☕</div>
+                <div class="card-smiley covered">☺</div>
+                <div class="card-smiley covered">☺</div>
 
             </div>
 
