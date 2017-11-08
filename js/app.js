@@ -119,3 +119,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+$("#play_again").off().click(function() {
+                    location.reload();
+    });
