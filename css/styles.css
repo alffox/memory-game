@@ -121,6 +121,7 @@ iframe {
 }
 
 #play_again {
-        width: 90px;
+        width: 94px;
         height: 40px;
+        padding-top: 25px;
     }
