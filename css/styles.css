@@ -13,6 +13,10 @@ header {
     display: flex;
 }
 
+h1 {
+    border-radius: 20px;
+}
+
 h1,
 #toolbar > *,
 #deck {
