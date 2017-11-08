@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,69 +23,68 @@
 
         </div>
 
-            <div id="toolbar">
+        <div id="toolbar">
 
-                <div id="timer" class="no-click-area">Timer<span class="time-counter">0:0</span></div>
+            <div id="timer" class="no-click-area">Timer<span class="time-counter">0:0</span></div>
 
-                <div id="clicks" class="no-click-area">Clicks<span class="moves-counter">0</span></div>
+            <div id="clicks" class="no-click-area">Clicks<span class="moves-counter">0</span></div>
 
-                <div id="rating" class="no-click-area">Rating<span class="rating-counter">★ ★ ★</span></div>
+            <div id="rating" class="no-click-area">Rating<span class="rating-counter">★ ★ ★</span></div>
 
-                <div id="restart"><button type="button" id="button">Restart Game</button></div>
+            <div id="restart"><button type="button" id="button">Restart Game</button></div>
 
         </div>
 
         <div id="deck" class="">
 
-                <div class="card-heart covered">❤</div>
-                <div class="card-heart covered">❤</div>
-                <div class="card-umbrella covered">☂</div>
-                <div class="card-umbrella covered">☂</div>
+            <div class="card-heart covered">❤</div>
+            <div class="card-heart covered">❤</div>
+            <div class="card-umbrella covered">☂</div>
+            <div class="card-umbrella covered">☂</div>
 
-                <div class="card-horse covered">♞</div>
-                <div class="card-horse covered">♞</div>
-                <div class="card-phone covered">☎</div>
-                <div class="card-phone covered">☎</div>
+            <div class="card-horse covered">♞</div>
+            <div class="card-horse covered">♞</div>
+            <div class="card-phone covered">☎</div>
+            <div class="card-phone covered">☎</div>
 
-                <div class="card-note covered">♫</div>
-                <div class="card-note covered">♫</div>
-                <div class="card-sun covered">☀</div>
-                <div class="card-sun covered">☀</div>
+            <div class="card-note covered">♫</div>
+            <div class="card-note covered">♫</div>
+            <div class="card-sun covered">☀</div>
+            <div class="card-sun covered">☀</div>
 
-                <div class="card-coffee covered">☕</div>
-                <div class="card-coffee covered">☕</div>
-                <div class="card-smiley covered">☺</div>
-                <div class="card-smiley covered">☺</div>
+            <div class="card-coffee covered">☕</div>
+            <div class="card-coffee covered">☕</div>
+            <div class="card-smiley covered">☺</div>
+            <div class="card-smiley covered">☺</div>
+
+        </div>
+
+        <!-- Modal inspired by https://www.w3schools.com/howto/howto_css_modals.asp -->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">×</span>
+                <p>Congratulations, you won !!!</p>
+                <div id="stats">
+                    <p>Time taken for completing the game: <span class="time-counter"></span></p>
+                    <p>Clicks made: <span class="moves-counter"></span></p>
+                    <p>The Star Rating was: <span class="rating-counter"></span></p>
+                    <button type="button" id="play_again">Play Again ?</button>
+                </div>
+
+                <!--  iFrame code obtained from Facebook site https://developers.facebook.com/docs/plugins/share-button and cleaned from inline styling -->
+                <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Falffox.github.io%2Fmemory-game%2F&layout=button&size=large&mobile_iframe=true&appId"></iframe>
 
             </div>
-</div>
 
-
-<!-- Modal inspired by https://www.w3schools.com/howto/howto_css_modals.asp -->
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">×</span>
-    <p>Congratulations, you won !!!</p>
-    <div id="stats">
-        <p>Time taken for completing the game:  <span class="time-counter"></span></p>
-        <p>Clicks made:  <span class="moves-counter"></span></p>
-        <p>The Star Rating was:  <span class="rating-counter"></span></p>
-        <button type="button" id="play_again">Play Again ?</button>
+        </div>
     </div>
-
-<!--  iFrame code obtained from Facebook site https://developers.facebook.com/docs/plugins/share-button and cleaned from inline styling -->
-<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Falffox.github.io%2Fmemory-game%2F&layout=button&size=large&mobile_iframe=true&appId"></iframe>
-
-  </div>
-
-</div>
-
 
     <script src="js/app.js"></script>
 
 </body>
+
 </html>
