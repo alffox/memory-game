@@ -84,7 +84,7 @@ span {
 }
 
 .matched {
-    border-color: green !important;
+    border-color: #187818 !important;
     pointer-events: none;
 }
 
