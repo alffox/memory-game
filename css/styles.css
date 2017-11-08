@@ -18,11 +18,11 @@ h1,
 #deck,
 #deck > * {
     background-color: #008000;
-    color: white;
+    color: #fff;
     padding: 20px;
     border-width: 15px;
     border-style: solid;
-    border-color: yellow;
+    border-color: #fff;
 }
 
 .container {
