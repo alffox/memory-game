@@ -91,7 +91,7 @@ $(cards).click(function() {
         }
     }
 
-    $("#button").off().click(function() {
+    $("#restart_game").off().click(function() {
                 if (confirm('You will lose your current progress, are you sure you want to proceed ?')) {
                     location.reload();
                 } else {}
