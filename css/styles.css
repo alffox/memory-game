@@ -15,9 +15,8 @@ header {
 
 h1,
 #toolbar > *,
-#deck,
-#deck > * {
-    background-color: #008000;
+#deck {
+    background-color: #187818;
     color: #fff;
     padding: 20px;
     border-width: 15px;
@@ -63,10 +62,16 @@ span {
     font-size: 380%;
     width: 80px;
     height: 80px;
+    background-color: #F5DA0F;
+    color: #187818;
+    padding: 20px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #fff;
 }
 
 .covered {
-    /*color: rgba(0, 0, 0, 0.0);*/
+    /*color: rgba(0, 0, 0, 0.0)*/;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
