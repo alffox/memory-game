@@ -8,6 +8,12 @@ html {
     background: linear-gradient(to right, #ffa500 , #ffff00,    #008000,    #00ffff,    #0000ff, #ee82ee); /* Standard syntax (must be last) */
 }
 
+h1 {
+    background-color: #2ecc71;
+    color: yellow;
+    font-weight: bolder;
+}
+
 .container {
     display: flex;
     flex-direction: column;
