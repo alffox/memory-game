@@ -8,26 +8,6 @@ html {
     background: linear-gradient(to right, #ffa500 , #ffff00,    #008000,    #00ffff,    #0000ff, #ee82ee); /* Standard syntax (must be last) */
 }
 
-header {
-    width: 25%;
-    display: flex;
-}
-
-h1 {
-    border-radius: 20px;
-}
-
-h1,
-#toolbar > *,
-#deck {
-    background-color: #187818;
-    color: #fff;
-    padding: 20px;
-    border-width: 12px;
-    border-style: solid;
-    border-color: #fff;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -37,41 +17,94 @@ h1,
     -webkit-align-items: center; /* Safari 7.0+ */
     display: flex;
     align-items: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+h1 {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #fff
+}
+
+h1,
+#toolbar > *,
+#deck {
+    background-color: #187818;
+    color: #fff;
+    padding: 15px;
+    margin-left: auto;
 }
 
 span {
-    display: inline-block;
-    padding: 20px;
+    padding-left: 5px;
 }
 
 #toolbar {
     display: flex;
-    width: 80%;
-    font-size: 1.8em;
+    width: 320px;
+    height: 45px;
+    flex-wrap: wrap;
+    border-style: solid;
+border-color: #fff;
+border-radius: 10px;
+background-color: #187818;
+      display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #toolbar > * {
-    width: 25%;
+    width: 44px;
+    font-size: 65%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 7px;
+    background-color: transparent;
+    white-space: nowrap;
+}
+
+#rating {
+margin-left: -8px;
+}
+
+#restart_game {
+
+}
+
+#restart {
+border-radius: 10px;
+white-space: unset;
+color: white;
+width: 58px;
+margin-right: -11px;
+font-size: 115%;
 }
 
 #deck {
     display: flex;
     flex-wrap: wrap;
-    margin: 80px 0px 50px;
-    width: 601px;
-    height: 601px;
+    margin: 30px 0px;
+    width: 266px;
+    height: 266px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #ffff00;
 }
 
 #deck > * {
-    font-size: 380%;
-    width: 80px;
-    height: 80px;
+    font-size: 261%;
+    width: 52px;
+    height: 52px;
     background-color: #F5DA0F;
     color: #187818;
-    padding: 20px;
-    border-width: 15px;
+    border-width: 7px;
     border-style: solid;
     border-color: #fff;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 47px;
+
 }
 
 .covered {
