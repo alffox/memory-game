@@ -88,20 +88,16 @@ font-size: 115%;
     height: 266px;
     border-width: 7px;
     border-style: solid;
-    border-color: #ffff00;
+    border-color: #fff;
 }
 
 #deck > * {
     font-size: 261%;
-
     width: 52px;
     height: 52px;
-    /*background-color: #F5DA0F;*/
-    color: #fff;
     border-width: 7px;
+    border-color: yellow;
     border-style: solid;
-    border-color: #fff;
-
     text-align: center;
     vertical-align: middle;
     line-height: 47px;
@@ -109,8 +105,7 @@ font-size: 115%;
 }
 
 .covered {
-    color: #187818;
-    opacity: 0.0;
+    color: rgba(0, 0, 0, 0.0);
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
