@@ -162,6 +162,11 @@ font-size: 115%;
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    font-size: 25px;
+}
+
+#congrats {
+    font-size: 1.1em;
 }
 
 /* The Close Button */
@@ -186,7 +191,7 @@ font-size: 115%;
 
 /*Inline stlying in iframe element in HTML has been moved here below:*/
 iframe {
-    width: 100px;
+    width: 95px;
     height: 28px;
     border: none;
     overflow: hidden;
