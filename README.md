@@ -2,7 +2,7 @@
 
 ## Project for the Front-End Web Developer Nanodegree - Intermediate Javascript
 
-The live app can be seen at https://alffox.github.io/memory-game/
+Play the game at https://alffox.github.io/memory-game/
 
 A browser-based card matching game (also known as _Concentration_)
 
