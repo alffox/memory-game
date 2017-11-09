@@ -85,7 +85,7 @@ $(cards).click(function() {
                 setTimeout(function() {
                     $('#deck .unmatched').removeClass('unmatched no-click-area').addClass('covered');
                     $(cardsContainer).toggleClass('no-click-area'); //after animation is finished, cards become clickable again
-                }, 1000);
+                }, 1300);
                 return;
             }
         }
