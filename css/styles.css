@@ -93,10 +93,11 @@ font-size: 115%;
 
 #deck > * {
     font-size: 261%;
+
     width: 52px;
     height: 52px;
-    background-color: #F5DA0F;
-    color: #187818;
+    /*background-color: #F5DA0F;*/
+    color: #fff;
     border-width: 7px;
     border-style: solid;
     border-color: #fff;
@@ -108,7 +109,8 @@ font-size: 115%;
 }
 
 .covered {
-    /*color: rgba(0, 0, 0, 0.0)*/;
+    color: #187818;
+    opacity: 0.0;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
