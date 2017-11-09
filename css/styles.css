@@ -23,7 +23,9 @@ html {
 h1 {
     border-radius: 20px;
     border-style: solid;
-    border-color: #fff
+    border-color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 h1,
@@ -51,6 +53,8 @@ background-color: #187818;
       display: flex;
   align-items: center;
   justify-content: center;
+  text-shadow: 2px 2px 4px #000000;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 #toolbar > * {
@@ -89,6 +93,7 @@ font-size: 115%;
     border-width: 7px;
     border-style: solid;
     border-color: #fff;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 #deck > * {
