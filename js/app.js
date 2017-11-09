@@ -32,11 +32,11 @@ $(cards).click(function() {
     }
 
     function starRatingCounter() {
-        if (mouseClicks === 1) {
+        if (mouseClicks === 16) {
             starCounter.text('★ ★ ★')
-        } else if (mouseClicks === 2) {
+        } else if (mouseClicks === 32) {
             starCounter.text('★ ★')
-        } else if (mouseClicks === 3) {
+        } else if (mouseClicks === 48) {
             starCounter.text('★')
         }
     }
