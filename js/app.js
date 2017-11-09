@@ -73,7 +73,6 @@ $(cards).click(function() {
                 openCards.splice(openCards[i]);
                 if ($('#deck .matched').length === 16) {
                     clearInterval(interval);
-                    alert("yeeeeeeeeeeeea ! You won, old chap !")
                     triggerModal();
                 }
             }
