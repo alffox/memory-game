@@ -116,6 +116,8 @@ font-size: 115%;
   pointer-events: none;
 }
 
+
+/*Card match success/error inspired by from http://codersblock.com/blog/creating-glow-effects-with-css/*/
 .matched {
     pointer-events: none;
     color: #fff;
