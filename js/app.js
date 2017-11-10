@@ -1,15 +1,15 @@
-var mouseClicks = 0;
-var cardsContainer = $(".deck");
-var cards = cardsContainer.children();
-var openCards = [];
+let mouseClicks = 0;
+const cardsContainer = $(".deck");
+const cards = cardsContainer.children();
+let openCards = [];
 
-var timeCounter = $('.time-counter');
-var elapsedSeconds = 0;
-var isTimeRunning = false;
+let timeCounter = $('.time-counter');
+let elapsedSeconds = 0;
+let isTimeRunning = false;
 
-var movesCounter = $('.moves-counter');
+const movesCounter = $('.moves-counter');
 
-var starCounter = $('.rating-counter');
+const starCounter = $('.rating-counter');
 
 // shuffle function readapted from http://jsfiddle.net/C6LPY/2/
 $(function() {
@@ -47,7 +47,7 @@ $(cards).click(function() {
             isTimeRunning = true; //shield function to prevent it from being ran at each mouse click
             interval = setInterval(function() {
                 elapsedSeconds++;
-                var elapsedTime = parseInt(elapsedSeconds / 60) + ':' + (elapsedSeconds % 60);
+                let elapsedTime = parseInt(elapsedSeconds / 60) + ':' + (elapsedSeconds % 60);
                 timeCounter.text(elapsedTime); //TODO add zero's when values are less than 10
             }, 1000);
         }
@@ -102,8 +102,8 @@ $(cards).click(function() {
 /* ====== Modal inspired by https://www.w3schools.com/howto/howto_css_modals.asp ====== */
 //TODO: the part below will need to be refactored to jQuery for consistency
 
-var modal = document.getElementById('myModal');
-var span = document.getElementsByClassName("close")[0];
+const modal = document.getElementById('myModal');
+const span = document.getElementsByClassName("close")[0];
 
 function triggerModal() {
     modal.style.display = "block";
