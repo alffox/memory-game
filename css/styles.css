@@ -79,7 +79,7 @@ span {
 .restart {
     border-radius: 10px;
     white-space: unset;
-    color: white;
+    color: #fff;
     width: 58px;
     margin-right: -11px;
 }
@@ -98,7 +98,7 @@ span {
     font-size: 261%;
     width: 52px;
     height: 52px;
-    border: 7px solid yellow;
+    border: 7px solid #ff0;
     text-align: center;
     vertical-align: middle;
     line-height: 47px;
@@ -168,7 +168,7 @@ span {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
