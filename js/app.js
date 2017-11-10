@@ -19,7 +19,7 @@ $(function() {
 });
 
 $(cards).click(function() {
-    var card = $(this);
+    let card = $(this);
     clicksCounter();
     timer();
     revealCard();
@@ -60,7 +60,7 @@ $(cards).click(function() {
     function cardMatcher() {
         openCards.push(card.attr('class'));
         if (openCards.length > 1) {
-            for (var i = 1; i < openCards.length; i++) {
+            for (let i = 1; i < openCards.length; i++) {
                 if (openCards[i - 1] == openCards[i]) {
                     flipOver();
                 } else {
@@ -70,7 +70,7 @@ $(cards).click(function() {
 
             function flipOver() {
                 $('.deck .no-click-area').addClass('matched').removeClass('no-click-area');
-                openCards.splice(openCards[i]); //flush cards from array
+                openCards.splice(openCards); //flush cards from array
                 if ($('.deck .matched').length === 16) {
                     clearInterval(interval);
                     triggerModal();
@@ -78,7 +78,7 @@ $(cards).click(function() {
             }
 
             function flipBack() {
-                openCards.splice(openCards[i]);
+                openCards.splice(openCards);
                 $('.deck .no-click-area').toggleClass('unmatched');
                 $(cardsContainer).addClass('no-click-area'); //while animation is playing, click on other cards should not be possible
                 setTimeout(function() {
