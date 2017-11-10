@@ -1,5 +1,5 @@
 let mouseClicks = 0;
-const cardsContainer = $(".deck");
+const cardsContainer = $('.deck');
 const cards = cardsContainer.children();
 let openCards = [];
 
@@ -33,11 +33,11 @@ $(cards).click(function() {
 
     function starRatingCounter() {
         if (mouseClicks === 16) {
-            starCounter.text('★ ★ ★')
+            starCounter.text('★ ★ ★');
         } else if (mouseClicks === 32) {
-            starCounter.text('★ ★')
+            starCounter.text('★ ★');
         } else if (mouseClicks === 48) {
-            starCounter.text('★')
+            starCounter.text('★');
         }
     }
 
@@ -90,12 +90,11 @@ $(cards).click(function() {
         }
     }
 
-    $("#restart_button").off().click(function() {
+    $('#restart_button').off().click(function() {
         if (confirm('You will lose your current progress, are you sure you want to proceed ?')) {
             location.reload();
         } else {}
     });
-
 
 });
 
@@ -103,22 +102,22 @@ $(cards).click(function() {
 //TODO: the part below will need to be refactored to jQuery for consistency
 
 const modal = document.getElementById('myModal');
-const span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName('close')[0];
 
 function triggerModal() {
-    modal.style.display = "block";
+    modal.style.display = 'block';
 }
 
 span.onclick = function() {
-    modal.style.display = "none";
+    modal.style.display = 'none';
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        modal.style.display = 'none';
     }
 }
 
-$("#replay_button").off().click(function() {
+$('#replay_button').off().click(function() {
     location.reload();
 });
