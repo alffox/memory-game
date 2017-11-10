@@ -19,6 +19,15 @@ html {
     font-family: "Arial Black", Gadget, sans-serif;
 }
 
+h1,
+#toolbar > *,
+#deck {
+    background-color: #187818;
+    color: #fff;
+    padding: 15px;
+    margin-left: auto;
+}
+
 h1 {
     border-radius: 20px;
     border-style: solid;
@@ -51,15 +60,6 @@ background-color: #187818;
     line-height: 7px;
     background-color: transparent;
     white-space: nowrap;
-}
-
-h1,
-#toolbar > *,
-#deck {
-    background-color: #187818;
-    color: #fff;
-    padding: 15px;
-    margin-left: auto;
 }
 
 span {
