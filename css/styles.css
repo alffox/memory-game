@@ -1,24 +1,36 @@
 /* Rainbow background from https://stackoverflow.com/questions/40557461/rainbow-gradient-in-css */
-html {
-    background: #00bfff; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #ffa500 , #ffff00,    #008000,    #00ffff,    #0000ff, #ee82ee); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #ffa500 , #ffff00,    #008000,    #00ffff,    #0000ff, #ee82ee); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #ffa500 , #ffff00,    #008000,    #00ffff,    #0000ff, #ee82ee); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #ffa500 , #ffff00,    #008000,    #00ffff,    #0000ff, #ee82ee); /* Standard syntax (must be last) */
-}
 
+html {
+    background: #00bfff;
+    /* For browsers that do not support gradients */
+
+    background: -webkit-linear-gradient(left, #ffa500, #ffff00, #008000, #00ffff, #0000ff, #ee82ee);
+    /* For Safari 5.1 to 6.0 */
+
+    background: -o-linear-gradient(right, #ffa500, #ffff00, #008000, #00ffff, #0000ff, #ee82ee);
+    /* For Opera 11.1 to 12.0 */
+
+    background: -moz-linear-gradient(right, #ffa500, #ffff00, #008000, #00ffff, #0000ff, #ee82ee);
+    /* For Firefox 3.6 to 15 */
+
+    background: linear-gradient(to right, #ffa500, #ffff00, #008000, #00ffff, #0000ff, #ee82ee);
+    /* Standard syntax (must be last) */
+}
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
+    display: -webkit-flex;
+    /* Safari */
+
+    -webkit-align-items: center;
+    /* Safari 7.0+ */
+
     display: flex;
     align-items: center;
     font-family: "Arial Black", Gadget, sans-serif;
 }
-
 h1,
 #toolbar > *,
 #deck {
@@ -27,7 +39,6 @@ h1,
     padding: 15px;
     margin-left: auto;
 }
-
 h1 {
     border-radius: 20px;
     border-style: solid;
@@ -35,49 +46,46 @@ h1 {
     text-shadow: 2px 2px 4px #000000;
     box-shadow: 2px 2px 4px #000000;
 }
-
 #toolbar {
     display: flex;
     width: 320px;
     height: 45px;
     flex-wrap: wrap;
     border-style: solid;
-border-color: #fff;
-border-radius: 10px;
-background-color: #187818;
-      display: flex;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 2px 2px 4px #000000;
+    border-color: #fff;
+    border-radius: 10px;
+    background-color: #187818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px #000000;
     box-shadow: 2px 2px 4px #000000;
 }
-
 #toolbar > * {
     width: 44px;
     font-size: 65%;
     text-align: center;
     vertical-align: middle;
     line-height: 7px;
-    background-color: transparent; /*fit buttons within toolbar*/
-    white-space: nowrap; /*helps stars not to wrap in a single line*/
-}
+    background-color: transparent;
+    /*fit buttons within toolbar*/
 
+    white-space: nowrap;
+    /*helps stars not to wrap in a single line*/
+}
 span {
     padding-left: 5px;
 }
-
 #rating {
-margin-left: -8px;
+    margin-left: -8px;
 }
-
 #restart {
-border-radius: 10px;
-white-space: unset;
-color: white;
-width: 58px;
-margin-right: -11px;
+    border-radius: 10px;
+    white-space: unset;
+    color: white;
+    width: 58px;
+    margin-right: -11px;
 }
-
 #deck {
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +97,6 @@ margin-right: -11px;
     border-color: #fff;
     box-shadow: 2px 2px 4px #000000;
 }
-
 #deck > * {
     font-size: 261%;
     width: 52px;
@@ -101,49 +108,69 @@ margin-right: -11px;
     vertical-align: middle;
     line-height: 47px;
 }
-
 .covered {
     color: rgba(0, 0, 0, 0.0);
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
-}
+    -webkit-touch-callout: none;
+    /* iOS Safari */
 
+    -webkit-user-select: none;
+    /* Safari */
+
+    -moz-user-select: none;
+    /* Firefox */
+
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
 .no-click-area {
-  pointer-events: none;
+    pointer-events: none;
 }
-
 /*Card match success/error inspired by from http://codersblock.com/blog/creating-glow-effects-with-css/*/
+
 .matched {
     pointer-events: none;
     color: #fff;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFDD1B, 0 0 30px #FFDD1B, 0 0 40px #FFDD1B, 0 0 55px #FFDD1B, 0 0 75px #FFDD1B;
 }
-
 .unmatched {
     color: #fff;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00, 0 0 55px #f00, 0 0 75px #f00;
 }
-
 /*Modal inspired by https://www.w3schools.com/howto/howto_css_modals.asp*/
-
 /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+
+    position: fixed;
+    /* Stay in place */
+
+    z-index: 1;
+    /* Sit on top */
+
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+    width: 100%;
+    /* Full width */
 
+    height: 100%;
+    /* Full height */
+
+    overflow: auto;
+    /* Enable scroll if needed */
+
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
 /* Modal Content/Box */
+
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
@@ -152,32 +179,29 @@ margin-right: -11px;
     width: 80%;
     font-size: 25px;
 }
-
 #congrats {
     font-size: 1.1em;
 }
-
 /* The Close Button */
+
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
-
 #play_again {
-        width: 94px;
-        height: 40px;
-    }
-
+    width: 94px;
+    height: 40px;
+}
 /*Inline stlying in iframe element in HTML has been moved here below:*/
+
 iframe {
     width: 95px;
     height: 28px;
