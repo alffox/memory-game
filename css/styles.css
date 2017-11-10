@@ -1,6 +1,5 @@
 /* Rainbow background from https://stackoverflow.com/questions/40557461/rainbow-gradient-in-css */
 html {
-    height: 200px;
     background: #00bfff; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left, #ffa500 , #ffff00,    #008000,    #00ffff,    #0000ff, #ee82ee); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, #ffa500 , #ffff00,    #008000,    #00ffff,    #0000ff, #ee82ee); /* For Opera 11.1 to 12.0 */
