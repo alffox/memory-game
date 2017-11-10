@@ -44,11 +44,11 @@ $(cards).click(function() {
     // timer function re-adapted from https://stackoverflow.com/questions/21670438/make-countdown-start-after-button-is-clicked
     function timer() {
         if (!isTimeRunning) {
-            isTimeRunning = true;
+            isTimeRunning = true; //shield function to prevent it from being ran at each mouse click
             interval = setInterval(function() {
                 elapsedSeconds++;
                 var elapsedTime = parseInt(elapsedSeconds / 60) + ':' + (elapsedSeconds % 60);
-                timeCounter.text(elapsedTime);
+                timeCounter.text(elapsedTime); //TODO add zero's when values are less than 10
             }, 1000);
         }
     }
@@ -70,7 +70,7 @@ $(cards).click(function() {
 
             function flipOver() {
                 $('.deck .no-click-area').addClass('matched').removeClass('no-click-area');
-                openCards.splice(openCards[i]);
+                openCards.splice(openCards[i]); //flush cards from array
                 if ($('.deck .matched').length === 16) {
                     clearInterval(interval);
                     triggerModal();
@@ -91,9 +91,9 @@ $(cards).click(function() {
     }
 
     $("#restart_button").off().click(function() {
-                if (confirm('You will lose your current progress, are you sure you want to proceed ?')) {
-                    location.reload();
-                } else {}
+        if (confirm('You will lose your current progress, are you sure you want to proceed ?')) {
+            location.reload();
+        } else {}
     });
 
 
@@ -106,7 +106,7 @@ var modal = document.getElementById('myModal');
 var span = document.getElementsByClassName("close")[0];
 
 function triggerModal() {
-modal.style.display = "block";
+    modal.style.display = "block";
 }
 
 span.onclick = function() {
@@ -120,5 +120,5 @@ window.onclick = function(event) {
 }
 
 $("#replay_button").off().click(function() {
-                    location.reload();
-    });
+    location.reload();
+});
