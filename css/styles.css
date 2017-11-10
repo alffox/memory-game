@@ -1,4 +1,4 @@
-/* Rainbow backgroung from https://stackoverflow.com/questions/40557461/rainbow-gradient-in-css */
+/* Rainbow background from https://stackoverflow.com/questions/40557461/rainbow-gradient-in-css */
 html {
     height: 200px;
     background: #00bfff; /* For browsers that do not support gradients */
