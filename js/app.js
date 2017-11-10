@@ -1,5 +1,5 @@
 var mouseClicks = 0;
-var cardsContainer = $("#deck");
+var cardsContainer = $(".deck");
 var cards = cardsContainer.children();
 var openCards = [];
 
@@ -69,9 +69,9 @@ $(cards).click(function() {
             }
 
             function flipOver() {
-                $('#deck .no-click-area').addClass('matched').removeClass('no-click-area');
+                $('.deck .no-click-area').addClass('matched').removeClass('no-click-area');
                 openCards.splice(openCards[i]);
-                if ($('#deck .matched').length === 16) {
+                if ($('.deck .matched').length === 16) {
                     clearInterval(interval);
                     triggerModal();
                 }
@@ -79,10 +79,10 @@ $(cards).click(function() {
 
             function flipBack() {
                 openCards.splice(openCards[i]);
-                $('#deck .no-click-area').toggleClass('unmatched');
+                $('.deck .no-click-area').toggleClass('unmatched');
                 $(cardsContainer).addClass('no-click-area'); //while animation is playing, click on other cards should not be possible
                 setTimeout(function() {
-                    $('#deck .unmatched').removeClass('unmatched no-click-area').addClass('covered');
+                    $('.deck .unmatched').removeClass('unmatched no-click-area').addClass('covered');
                     $(cardsContainer).toggleClass('no-click-area'); //after animation is finished, cards become clickable again
                 }, 1300);
                 return;
@@ -90,7 +90,7 @@ $(cards).click(function() {
         }
     }
 
-    $("#restart_game").off().click(function() {
+    $("#restart_button").off().click(function() {
                 if (confirm('You will lose your current progress, are you sure you want to proceed ?')) {
                     location.reload();
                 } else {}
@@ -119,6 +119,6 @@ window.onclick = function(event) {
     }
 }
 
-$("#play_again").off().click(function() {
+$("#replay_button").off().click(function() {
                     location.reload();
     });

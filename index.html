@@ -19,19 +19,19 @@
                 <h1>Memory Game</h1>
             </header>
 
-        <div id="toolbar">
+        <div id="toolbar" class="toolbar">
 
-            <div id="timer" class="no-click-area">Timer<span class="time-counter">0:0</span></div>
+            <div class="no-click-area timer">Timer<span class="time-counter">0:0</span></div>
 
-            <div id="clicks" class="no-click-area">Clicks<span class="moves-counter">0</span></div>
+            <div class="no-click-area clicks">Clicks<span class="moves-counter">0</span></div>
 
-            <div id="rating" class="no-click-area">Rating<span class="rating-counter">★ ★ ★</span></div>
+            <div class="no-click-area rating">Rating<span class="rating-counter">★ ★ ★</span></div>
 
-            <div id="restart"><button type="button" id="restart_game">Restart</button></div>
+            <div class="restart"><button type="button" id="restart_button">Restart</button></div>
 
         </div>
 
-        <div id="deck" class="">
+        <div class="deck">
 
             <div class="card-heart covered">❤</div>
             <div class="card-heart covered">❤</div>
@@ -63,12 +63,12 @@
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">×</span>
-                <p id="congrats">♔ Congratulations, you won !</p>
+                <p class="congrats">♔ Congratulations, you won !</p>
                 <div id="stats">
                     <p>Time taken for completing the game: <span class="time-counter"></span></p>
                     <p>Clicks made: <span class="moves-counter"></span></p>
                     <p>The Star Rating was: <span class="rating-counter"></span></p>
-                    <button type="button" id="play_again">Play Again ?</button>
+                    <button type="button" id="replay_button" class="play-again">Play Again ?</button>
                 </div>
 
                 <!--  iFrame code obtained from Facebook site https://developers.facebook.com/docs/plugins/share-button and cleaned from inline styling -->
