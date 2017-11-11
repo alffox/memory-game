@@ -27,7 +27,7 @@ header,
 
 h1,
 .timer,
-.clicks,
+.moves,
 .rating,
 .restart,
 .deck {
@@ -64,7 +64,7 @@ h1 {
 }
 
 .timer,
-.clicks,
+.moves,
 .rating,
 .restart {
     width: 46px;

@@ -1,4 +1,4 @@
-let mouseClicks = 0;
+let moves = 0;
 const cardsContainer = $('.deck');
 const cards = cardsContainer.children();
 let openCards = [];
@@ -20,23 +20,22 @@ $(function() {
 
 $(cards).click(function() {
     let card = $(this);
-    clicksCounter();
     timer();
     revealCard();
     cardMatcher();
 
-    function clicksCounter() {
-        mouseClicks++;
-        movesCounter.text(mouseClicks);
+    function movesAttemptedCounter() {
+        moves++;
+        movesCounter.text(moves);
         starRatingCounter();
     }
 
     function starRatingCounter() {
-        if (mouseClicks === 16) {
+        if (moves === 16) {
             starCounter.text('★ ★ ★');
-        } else if (mouseClicks === 32) {
+        } else if (moves === 32) {
             starCounter.text('★ ★');
-        } else if (mouseClicks === 48) {
+        } else if (moves === 48) {
             starCounter.text('★');
         }
     }
@@ -66,6 +65,7 @@ $(cards).click(function() {
                 } else {
                     flipBack();
                 }
+                movesAttemptedCounter();
             }
 
             function flipOver() {
