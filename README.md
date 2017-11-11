@@ -2,11 +2,11 @@
 
 ## Project for the Front-End Web Developer Nanodegree - Intermediate Javascript
 
-Play the game at https://alffox.github.io/memory-game/
+This is a browser-based card matching game (also known as _Concentration_)
 
-A browser-based card matching game (also known as _Concentration_)
+To load the game, navigate to https://alffox.github.io/memory-game/
 
-The game board should consist of 16 "cards" arranged in a grid. The deck is made up of 8 different pairs of cards, each with different symbols on one side. The cards are arranged randomly on the grid with the symbol face down. The gameplay rules are very simple: flip over two hidden cards at a time to locate the ones that match!
+To start the game, simply click one of the green squares in the yellow grid. The game board consists of 16 "cards" arranged in a grid. The deck is made up of 8 different pairs of cards, each with different symbols on one side. The cards are arranged randomly on the grid with the symbol face down. The gameplay rules are very simple: flip over two hidden cards at a time to locate the ones that match!
 
 ### Each turn:
 
