@@ -31,11 +31,11 @@ $(cards).click(function() {
     }
 
     function starRatingCounter() {
-        if (moves === 16) {
+        if (moves === 8) {
             starCounter.text('★ ★ ★');
-        } else if (moves === 32) {
+        } else if (moves === 16) {
             starCounter.text('★ ★');
-        } else if (moves === 48) {
+        } else if (moves === 24) {
             starCounter.text('★');
         }
     }
